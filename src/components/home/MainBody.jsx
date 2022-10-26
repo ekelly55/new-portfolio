@@ -24,6 +24,19 @@ const MainBody = React.forwardRef(
             <div className="lead typist banner-text">
               Software Engineer | Educator | Creative Thinker
             </div>
+            <div className="p-5">
+            {icons.map((icon, index) => (
+              <a
+                key={`social-icon-${index}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                href={icon.url}
+                aria-label={`My ${icon.image.split("-")[1]}`}
+              >
+                <i className={`fab ${icon.image}  fa-3x socialicons`} />
+              </a>
+            ))}
+          </div>
           </Typist>
           
           <a
