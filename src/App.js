@@ -5,7 +5,6 @@ import {
   mainBody,
   about,
   repos,
-  leadership,
   skills,
   getInTouch,
   experiences
@@ -55,14 +54,7 @@ const Home = React.forwardRef((props, ref) => {
           specfic={repos.specificRepos}
         />
       )}
-      {leadership.show && (
-        <Leadership
-          heading={leadership.heading}
-          message={leadership.message}
-          img={leadership.images}
-          imageSize={leadership.imageSize}
-        />
-      )}
+      
       {skills.show && (
         <Skills
           heading={skills.heading}
