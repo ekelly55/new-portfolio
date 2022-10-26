@@ -18,26 +18,14 @@ const MainBody = React.forwardRef(
         <div id="stars"></div>
         <Container className="text-center">
           <h1 ref={ref} className="display-1">
-            {title}
+            Eamonn Kelly
           </h1>
           <Typist>
             <div className="lead typist">
-              {message}
+              Software Engineer | Educator | Creative Thinker
             </div>
           </Typist>
-          <div className="p-5">
-            {icons.map((icon, index) => (
-              <a
-                key={`social-icon-${index}`}
-                target="_blank"
-                rel="noopener noreferrer"
-                href={icon.url}
-                aria-label={`My ${icon.image.split("-")[1]}`}
-              >
-                <i className={`fab ${icon.image}  fa-3x socialicons`} />
-              </a>
-            ))}
-          </div>
+          
           <a
             className="btn btn-outline-light btn-lg "
             href="#aboutme"

@@ -39,7 +39,7 @@ const Navigation = React.forwardRef((props, ref) => {
       expand="lg"
     >
       <Navbar.Brand className="navbar-brand" href={process.env.PUBLIC_URL + "/#home"}>
-        {`<${mainBody.firstName} />`}
+        {`<Eamonn/>`}
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" className="toggler" />
       <Navbar.Collapse id="basic-navbar-nav">
@@ -59,7 +59,7 @@ const Navigation = React.forwardRef((props, ref) => {
           )}
           <NavLink
             className="nav-item lead"
-            href={about.resume}
+            href="https://drive.google.com/file/d/1tm2Isoo7Cr2NmoY2z6SohKr6vbSpQd4G/view?usp=sharing"
             target="_blank"
             rel="noreferrer noopener"
           >
