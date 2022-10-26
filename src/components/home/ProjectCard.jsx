@@ -1,52 +1,31 @@
 import React, { useState, useEffect, useCallback } from "react";
 import Col from "react-bootstrap/Col";
 import Card from "react-bootstrap/Card";
-import Skeleton from "react-loading-skeleton";
 import axios from "axios";
 
-const ProjectCard = ({ value }) => {
-  const {
-    name,
-    live,
-    git,
-    image,
-    description
-  } = value;
+const ProjectCard = ({ project }) => {
+
   return (
-    <Col md={6}>
+    
       <Card className="card shadow-lg p-3 mb-5 bg-white rounded">
         <Card.Body>
-          <Card.Title as="h5">{name || <Skeleton />} </Card.Title>
-          <Card.Text>{(!description) ? "" : description || <Skeleton count={3} />} </Card.Text>
-          {live ? <CardButtons live={live} /> : <Skeleton count={2} />}
-          <hr />
-          {/* {git ? (
-            <Language languages_url={languages_url} repo_url={svn_url} />
-          ) : (
-            <Skeleton count={3} />
-          )}
-          {value ? (
-            <CardFooter star_count={stargazers_count} repo_url={svn_url} pushed_at={pushed_at} />
-          ) : (
-            <Skeleton />
-          )} */}
+          <Card.Title as="h5">{project.name} </Card.Title>
+          <Card.Text>{project.description} </Card.Text>
+              <CardButtons live={project.live} git={project.git}/>
         </Card.Body>
       </Card>
-    </Col>
+    
   );
 };
 
-const CardButtons = ({ svn_url }) => {
+const CardButtons = ({ live, git }) => {
   return (
     <div className="d-grid gap-2 d-md-block">
-      <a
-        href={`${svn_url}/archive/master.zip`}
-        className="btn btn-outline-secondary mx-2"
-      >
-        <i className="fab fa-github" /> Clone Project
+      <a href={live} className="btn btn-outline-secondary mx-2">
+        Live
       </a>
-      <a href={svn_url} target=" _blank" className="btn btn-outline-secondary mx-2">
-        <i className="fab fa-github" /> Repo
+      <a href={git} className="btn btn-outline-secondary mx-2">
+        GitHub
       </a>
     </div>
   );
