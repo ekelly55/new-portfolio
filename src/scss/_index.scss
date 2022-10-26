@@ -52,9 +52,14 @@ code {
   background-color: rgba(234, 236, 239, 0.81);
   transition: background-color 0.2s;
 }
-.brand {
-  color: #363636 !important;
+.navbar-brand {
+  color: #1a1a4a !important;
+
 }
+.navLink {
+  color: #1a1a4a;
+}
+
 .nav-item {
   transition: color, 0.2s;
 }
@@ -86,9 +91,13 @@ code {
   height: 100%;
   left: 0;
   right: 0;
-  color: #fff;
+  color: #AEE5D8;
   text-align: center;
   margin-top: 0px;
+}
+
+.banner-text {
+  color: #AEE5D8;
 }
 
 .typist {
@@ -101,6 +110,11 @@ code {
   }
 }
 
+.more-button{
+  color: #AEE5D8;
+  border-color: #AEE5D8;
+  
+}
 .card {
   transition: transform 0.3s, box-shadow 0.3s;
   &:hover {

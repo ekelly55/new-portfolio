@@ -11,23 +11,23 @@ const MainBody = React.forwardRef(
         id="home"
         style={{
           background: `linear-gradient(136deg,${gradient})`,
-          backgroundSize: "1200% 1200%",
+          //backgroundSize: "1200% 1200%",
         }}
         className="title bg-transparent bgstyle text-light min-vh-100 d-flex align-content-center align-items-center flex-wrap m-0"
       >
         <div id="stars"></div>
         <Container className="text-center">
-          <h1 ref={ref} className="display-1">
+          <h1 ref={ref} className="display-1 banner-text">
             Eamonn Kelly
           </h1>
           <Typist>
-            <div className="lead typist">
+            <div className="lead typist banner-text">
               Software Engineer | Educator | Creative Thinker
             </div>
           </Typist>
           
           <a
-            className="btn btn-outline-light btn-lg "
+            className="btn btn-outline-light btn-lg more-button"
             href="#aboutme"
             role="button"
             aria-label="Learn more about me"
