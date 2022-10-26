@@ -7,11 +7,10 @@ import axios from "axios";
 const ProjectCard = ({ value }) => {
   const {
     name,
-    description,
-    svn_url,
-    stargazers_count,
-    languages_url,
-    pushed_at,
+    live,
+    git,
+    image,
+    description
   } = value;
   return (
     <Col md={6}>
@@ -19,9 +18,9 @@ const ProjectCard = ({ value }) => {
         <Card.Body>
           <Card.Title as="h5">{name || <Skeleton />} </Card.Title>
           <Card.Text>{(!description) ? "" : description || <Skeleton count={3} />} </Card.Text>
-          {svn_url ? <CardButtons svn_url={svn_url} /> : <Skeleton count={2} />}
+          {live ? <CardButtons live={live} /> : <Skeleton count={2} />}
           <hr />
-          {languages_url ? (
+          {/* {git ? (
             <Language languages_url={languages_url} repo_url={svn_url} />
           ) : (
             <Skeleton count={3} />
@@ -30,7 +29,7 @@ const ProjectCard = ({ value }) => {
             <CardFooter star_count={stargazers_count} repo_url={svn_url} pushed_at={pushed_at} />
           ) : (
             <Skeleton />
-          )}
+          )} */}
         </Card.Body>
       </Card>
     </Col>

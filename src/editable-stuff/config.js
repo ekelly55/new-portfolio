@@ -39,10 +39,7 @@ const mainBody = {
 const about = {
   show: true,
   heading: "About Me",
-  imageLink: require("../editable-stuff/hashirshoaeb.png"),
   imageSize: 375,
-  message:
-    "My name is Hashir Shoaib. I’m a graduate of 2020 from National University of Sciences and Technology at Islamabad with a degree in Computer Engineering. I'm most passionate about giving back to the community, and my goal is to pursue this passion within the field of software engineering. In my free time I like working on open source projects.",
   resume: "https://docs.google.com/document/d/13_PWdhThMr6roxb-UFiJj4YAFOj8e_bv3Vx9UHQdyBQ/edit?usp=sharing",
 };
 
@@ -51,14 +48,39 @@ const about = {
 //      i.e: reposLength: 0,
 // If you want to display specfic projects, add the repository names,
 //      i.e ["repository-1", "repo-2"]
-const repos = {
-  show: true,
-  heading: "Recent Projects",
-  gitHubUsername: "ekelly55", //i.e."johnDoe12Gh"
-  reposLength: 4,
-  specificRepos: [],
-};
+const projects = [
 
+    {
+      name: "Ghost Assistant",
+      live: "https://ekelly55.github.io/Project-1-Ghost-Assistant/",
+      git: "https://github.com/ekelly55/Project-1-Ghost-Assistant",
+      image: "https://i.imgur.com/3EPeFVl.png",
+      description: "add here"
+    },
+    {
+      name: "Noob Insider",
+      live: "https://obscure-fortress-74365.herokuapp.com/games",
+      git: "https://github.com/tjphillips08/Video-game-news",
+      image: "https://i.imgur.com/ZF7zE0l.png",
+      description: "add here"
+    },
+    {
+      name: "AnimeDB",
+      live: "https://anime-db.netlify.app/",
+      git: "https://github.com/saybeeali/animedb-front-end",
+      image: "https://i.imgur.com/E7DOkrU.png",
+      description: "add here"
+    },
+    {
+      name: "DadHub",
+      live: "https://dadhub.herokuapp.com/",
+      git: "https://github.com/ekelly55/DadHub",
+      image: "https://i.imgur.com/mpkZ74g.png",
+      description: "add here"
+    },
+  ];
+  
+  
 // SKILLS SECTION
 const skills = {
   show: true,
@@ -116,4 +138,4 @@ const experiences = {
 //   show: false,
 // };
 
-export { navBar, mainBody, about, repos, skills, getInTouch, experiences };
+export { navBar, mainBody, about, projects, skills, getInTouch, experiences };
