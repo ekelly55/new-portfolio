@@ -55,28 +55,32 @@ const projects = [
       live: "https://ekelly55.github.io/Project-1-Ghost-Assistant/",
       git: "https://github.com/ekelly55/Project-1-Ghost-Assistant",
       image: "https://i.imgur.com/3EPeFVl.png",
-      description: "add here"
+      tech: ["HTML5", "CSS Grid", "CSS Flexbox", "Javascript", "GitHub Pages"],
+      description: "Tamagotchi-style Halloween-themed in-browser game deployed on Github Pages."
     },
     {
       name: "Noob Insider",
       live: "https://obscure-fortress-74365.herokuapp.com/games",
       git: "https://github.com/tjphillips08/Video-game-news",
       image: "https://i.imgur.com/ZF7zE0l.png",
-      description: "add here"
+      tech: ["HTML5", "CSS Grid", "CSS Flexbox", "Javascript", "Node.js", "Express.js", "MongoDB","Heroku"],
+      description: "Full-stack MEN application rendering a fully-functional video game news site with user interactivity. Deployed on Heroku."
     },
     {
       name: "AnimeDB",
       live: "https://anime-db.netlify.app/",
       git: "https://github.com/saybeeali/animedb-front-end",
       image: "https://i.imgur.com/E7DOkrU.png",
-      description: "add here"
+      tech: ["HTML5", "Bootstrap", "Javascript", "React", "Node.js", "Express.js", "MongoDB","Heroku", "Netlify"],
+      description: "Full-stack MERN application for users to find information on top anime drawn from an external API. Deployed on Netlify."
     },
     {
       name: "DadHub",
       live: "https://dadhub.herokuapp.com/",
       git: "https://github.com/ekelly55/DadHub",
       image: "https://i.imgur.com/mpkZ74g.png",
-      description: "add here"
+      tech: ["HTML5", "Bootstrap", "Python", "Django", "PostgreSQL", "Heroku"],
+      description: "Full-stack fully-responsive Django/PostgreSQL social media app for dads to interact and connect based on common interests and location. Deployed on Heroku."
     },
   ];
   

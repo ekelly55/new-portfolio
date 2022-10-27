@@ -1,5 +1,4 @@
 import React from "react";
-
 import axios from "axios";
 import { Jumbotron } from "./migration";
 
@@ -35,21 +34,21 @@ const AboutMe = ({ heading, message, link, imgSize, resume }) => {
 
   return (
     <Jumbotron id="aboutme" className="m-0">
-      <div className="container row">
-        <div className="col-5 d-none d-lg-block align-self-center">
-          {showPic && (
+      <div className="container-sm row">
+        <div className="col-md d-lg-block">
+          
             <img
-              className="border border-secondary rounded-circle"
-              src="https://i.imgur.com/EyvCOfM_d.jpg?maxwidth=520&shape=thumb&fidelity=high"
+              className="border rounded-circle"
+              src="https://i.imgur.com/caYk1va.jpg"
               alt="profilepicture"
-              width={imgSize}
-              height={imgSize}
+              width="310"
+              height="300"
             />
-          )}
+          
         </div>
-        <div className={`col-lg-${showPic ? "7" : "12"}`}>
+        <div className="col">
           <h2 className="display-4 mb-5 text-center">About Me</h2>
-          <p className="lead text-center">Describe myself here</p>
+          <p className="lead">As a values-driven software engineer, educator and creative thinker, I have a passion for leveraging technology to serve people and change the world. I take pride and satisfaction in a job well-done, but also continuously pursue the next improvement. From my background as an educator, I know the importance of relationship building and collaboration to a team’s ability to deliver outstanding results on projects. I bring a wealth of organizational and collaborative soft skills as well as a full-suite of front- and backend web development abilities to the job. On a personal level, I relish creating things and diving into new adventures, a passion I carry into every new role.</p>
           {resume && (
             <p className="lead text-center">
               <a

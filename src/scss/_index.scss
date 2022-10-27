@@ -123,6 +123,10 @@ code {
     transition: transform 0.3s, box-shadow 0.3s;
   }
 }
+
+.techList {
+  list-style: none;
+}
 .skills-tabs {
   flex-grow: 1;
 }

@@ -8,9 +8,19 @@ const ProjectCard = ({ project }) => {
   return (
     
       <Card className="card shadow-lg p-3 mb-5 bg-white rounded">
+        <Card.Img variant="top" src={project.image} />
         <Card.Body>
           <Card.Title as="h5">{project.name} </Card.Title>
-          <Card.Text>{project.description} </Card.Text>
+          <Card.Text>
+            <div className=" container techSection">
+              <ul className="  techList">
+                {project.tech.map((tech, index) => (
+                  <li className="">{tech}</li>
+                ))}
+              </ul>
+            </div>
+            {project.description} 
+          </Card.Text>
               <CardButtons live={project.live} git={project.git}/>
         </Card.Body>
       </Card>
