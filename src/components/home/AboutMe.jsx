@@ -52,7 +52,7 @@ const AboutMe = ({ heading, message, link, imgSize, resume }) => {
           {resume && (
             <p className="lead text-center">
               <a
-                className="btn btn-outline-dark btn-lg"
+                className="btn btn-outline-dark btn-lg me-2"
                 href="https://drive.google.com/file/d/1tm2Isoo7Cr2NmoY2z6SohKr6vbSpQd4G/view?usp=sharing"
                 target="_blank"
                 rel="noreferrer noopener"
@@ -60,6 +60,16 @@ const AboutMe = ({ heading, message, link, imgSize, resume }) => {
                 aria-label="Resume/CV"
               >
                 Resume
+              </a>
+              <a
+                className="btn btn-outline-dark btn-lg ms-2"
+                href={process.env.PUBLIC_URL + "/#contact"}
+                // target="_blank"
+                rel="noreferrer noopener"
+                role="button"
+                aria-label="contact"
+              >
+                Contact
               </a>
             </p>
           )}

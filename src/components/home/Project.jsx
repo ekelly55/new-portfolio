@@ -10,11 +10,11 @@ const Project = (props) => {
 
   return (
     <Jumbotron fluid id="projects" className="bg-light m-0">
-      <Container className="">
+      <Container className="container-sm">
         <h2>Projects</h2>
         <Row>
           {props.projects.map((project, index) => (
-            <div className="col-6">
+            <div className="col-sm">
 
               <ProjectCard project = {project}/>
             </div>

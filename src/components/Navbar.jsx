@@ -3,7 +3,7 @@ import { useScrollPosition } from "../hooks/useScrollPosition";
 import useResizeObserver from "../hooks/useResizeObserver";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
-import { mainBody, projects, about, skills } from "../editable-stuff/config.js";
+import { mainBody, projects, about, skills, getInTouch } from "../editable-stuff/config.js";
 import { NavLink } from "./home/migration";
 
 const Navigation = React.forwardRef((props, ref) => {
@@ -39,7 +39,9 @@ const Navigation = React.forwardRef((props, ref) => {
       expand="lg"
     >
       <Navbar.Brand className="navbar-brand" href={process.env.PUBLIC_URL + "/#home"}>
-        {`<Eamonn/>`}
+        {`<Eamonn>`}<br></br>
+        <span className="ms-3">Software Engineer</span><br></br>
+        {`</Kelly>`}
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" className="toggler" />
       <Navbar.Collapse id="basic-navbar-nav">
@@ -69,10 +71,14 @@ const Navigation = React.forwardRef((props, ref) => {
             <NavLink
               className="nav-item navLink lead"
               href={process.env.PUBLIC_URL + "/#aboutme"}
-            >
-              About
-            </NavLink>
+            >About Me</NavLink>
           )}
+            <NavLink
+              className="nav-item navLink lead"
+              href={process.env.PUBLIC_URL + "/#projects"}
+            >
+              Projects
+            </NavLink>
           {skills.show && (
             <NavLink
               className="nav-item navLink lead"
@@ -81,6 +87,12 @@ const Navigation = React.forwardRef((props, ref) => {
               Skills
             </NavLink>
           )}
+          <NavLink
+              className="nav-item navLink lead"
+              href={process.env.PUBLIC_URL + "/#contact"}
+            >
+              Contact
+            </NavLink>
         </Nav>
       </Navbar.Collapse>
     </Navbar>

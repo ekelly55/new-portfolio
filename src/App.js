@@ -58,8 +58,14 @@ const Home = React.forwardRef((props, ref) => {
           heading={skills.heading}
           hardSkills={skills.hardSkills}
           softSkills={skills.softSkills}
-        />
-      )}
+          />
+          )}
+        <GetInTouch
+          heading={getInTouch.heading}
+          message={getInTouch.message}
+          email={getInTouch.email}
+          />
+          
       
     </>
   );

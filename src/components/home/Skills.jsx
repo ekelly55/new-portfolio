@@ -20,12 +20,16 @@ const Skills = React.forwardRef(({ heading, hardSkills, softSkills }, ref) => {
     skillsTabRef
   );
   return (
-    <Jumbotron ref={skillsTabRef} fluid className="bg-white m-0" id="skills">
+    <Jumbotron fluid className="bg-white m-0" id="skills">
       <Container className="p-5 ">
-        <h2 ref={skillsTabRef} className="display-4 pb-5 text-center">
+        <h2 className="display-4 pb-5 text-center">
           {heading}
         </h2>
-        <Tabs
+        
+        {hardSkills.map((skill, index) => (
+          <i className={`fab ${skill.image}  fa-3x stackicons`} />
+))}
+        {/* <Tabs
           className="skills-tabs"
           defaultActiveKey="hard-skills"
           id="skills-tabs"
@@ -49,7 +53,7 @@ const Skills = React.forwardRef(({ heading, hardSkills, softSkills }, ref) => {
               <SkillsTab skills={softSkills} isScrolled={isScrolled} />
             </Row>
           </Tab>
-        </Tabs>
+        </Tabs> */}
       </Container>
     </Jumbotron>
   );
