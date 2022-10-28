@@ -14,7 +14,7 @@ const Project = (props) => {
         <h2>Projects</h2>
         <Row>
           {props.projects.map((project, index) => (
-            <div className="col-sm">
+            <div className="col-6">
 
               <ProjectCard project = {project}/>
             </div>

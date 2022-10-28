@@ -9,10 +9,24 @@ import { BsBootstrapFill } from "react-icons/bs"
 const ProjectCard = ({ project }) => {
 
   return (
-    
-      <Card className="card shadow-lg p-3 mb-5 bg-white rounded">
-        <Card.Img variant="top" src={project.image} />
-        <Card.Body>
+    <div className="card shadow-lg p-3 mb-5 bg-white rounded">
+
+      
+        <img className="projectpic" src={project.image} />
+        <div className="overlay">
+          <div className="content">
+            <h5>{project.name}</h5>
+            <p>{project.description}</p>
+            <div className=" container techSection">
+              <ul className=" row techList">
+                {project.tech.map((tech, index) => (
+                  <li className="col-4">{tech}</li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </div>
+        {/* <Card.Body>
           <Card.Title as="h5">{project.name} </Card.Title>
           <Card.Text>
             <div className=" container techSection">
@@ -25,9 +39,9 @@ const ProjectCard = ({ project }) => {
             {project.description} 
           </Card.Text>
               <CardButtons live={project.live} git={project.git}/>
-        </Card.Body>
-      </Card>
-    
+        </Card.Body> */}
+      
+    </div>
   );
 };
 
