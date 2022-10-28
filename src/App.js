@@ -56,7 +56,8 @@ const Home = React.forwardRef((props, ref) => {
       {skills.show && (
         <Skills
           heading={skills.heading}
-          hardSkills={skills.hardSkills}
+          faHardSkills={skills.faHardSkills}
+          diHardSkills={skills.diHardSkills}
           softSkills={skills.softSkills}
           />
           )}

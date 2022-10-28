@@ -1,3 +1,5 @@
+import {DiDjango} from 'react-icons/di';
+
 // Navigation Bar SECTION
 const navBar = {
   show: true,
@@ -89,22 +91,20 @@ const projects = [
 const skills = {
   show: true,
   heading: "Skills",
-  hardSkills: [
+  faHardSkills: [
+    { image: "fa-github"},
     { image: "fa-html5"},
     { image: "fa-css3"},
     { image: "fa-react"},
     { image: "fa-python"},
     { image: "fa-node"},
     { image: "fa-bootstrap"},
-    { image: "fa-express"},
-    // { name: "Python", value: 90 },
-    // { name: "SQL", value: 75 },
-    // { name: "Data Structures", value: 85 },
-    // { name: "C/C++", value: 65 },
-    // { name: "JavaScript", value: 90 },
-    // { name: "React", value: 65 },
-    // { name: "HTML/CSS", value: 55 },
-    // { name: "C#", value: 80 },
+    { image: "fa-square-js"},
+  ],
+  diHardSkills: [
+    { image: "DiDjango"},
+    { image: "DiMongodb"}
+    
   ],
   softSkills: [
     { name: "Goal-Oriented", value: 80 },

@@ -6,8 +6,10 @@ import Row from "react-bootstrap/Row";
 import { Jumbotron } from "./migration";
 import { Container } from "react-bootstrap";
 import { useScrollPosition } from "../../hooks/useScrollPosition";
+import {DiDjango, DiMongodb, DiHeroku} from "react-icons/di"
+import {SiNetlify} from "react-icons/si"
 
-const Skills = React.forwardRef(({ heading, hardSkills, softSkills }, ref) => {
+const Skills = React.forwardRef(({ heading, faHardSkills, diHardSkills, softSkills }, ref) => {
   const skillsTabRef = React.useRef(null);
   const [isScrolled, setIsScrolled] = React.useState(false);
   //const navbarDimensions = useResizeObserver(navbarMenuRef);
@@ -26,9 +28,14 @@ const Skills = React.forwardRef(({ heading, hardSkills, softSkills }, ref) => {
           {heading}
         </h2>
         
-        {hardSkills.map((skill, index) => (
+        {faHardSkills.map((skill, index) => (
           <i className={`fab ${skill.image}  fa-3x stackicons`} />
 ))}
+        <DiDjango className="django stackicons"/>
+        <DiMongodb className="mongo stackicons"/>
+        <DiHeroku className="heroku stackicons"/>
+        <SiNetlify className="netlify stackicons"/>
+
         {/* <Tabs
           className="skills-tabs"
           defaultActiveKey="hard-skills"
