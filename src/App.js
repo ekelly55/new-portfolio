@@ -61,11 +61,12 @@ const Home = React.forwardRef((props, ref) => {
           softSkills={skills.softSkills}
           />
           )}
-        <GetInTouch
+        {/* <Footer/> */}
+        {/* <GetInTouch
           heading={getInTouch.heading}
           message={getInTouch.message}
           email={getInTouch.email}
-          />
+          /> */}
           
       
     </>
@@ -83,15 +84,16 @@ const App = () => {
       </Routes>
       {/* {false && <Route path="/blog" exact component={Blog} />}
       {false && <Route path="/blog/:id" component={BlogPost} />} */}
-      <Footer>
-        {getInTouch.show && (
+      <Footer 
+      heading={getInTouch.heading}
+      message={getInTouch.message}
+      email={getInTouch.email}/>
+        {/* {getInTouch.show && (
           <GetInTouch
-            heading={getInTouch.heading}
-            message={getInTouch.message}
-            email={getInTouch.email}
-          />
+            
+          /> 
         )}
-      </Footer>
+          */}
     </BrowserRouter>
   );
 };
