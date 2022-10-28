@@ -1,4 +1,6 @@
-import {DiDjango} from 'react-icons/di';
+import { SiJavascript, SiDjango, SiMongodb, SiNetlify, SiHeroku, SiPostgresql } from "react-icons/si"
+import { FaGithub, FaHtml5, FaCss3, FaReact, FaPython, FaNodeJs } from "react-icons/fa"
+import { BsBootstrapFill } from "react-icons/bs"
 
 // Navigation Bar SECTION
 const navBar = {
@@ -57,7 +59,7 @@ const projects = [
       live: "https://ekelly55.github.io/Project-1-Ghost-Assistant/",
       git: "https://github.com/ekelly55/Project-1-Ghost-Assistant",
       image: "https://i.imgur.com/3EPeFVl.png",
-      tech: ["HTML5", "CSS Grid", "CSS Flexbox", "Javascript", "GitHub Pages"],
+      tech: [<FaHtml5/>, <FaCss3/>, <SiJavascript/>],
       description: "Tamagotchi-style Halloween-themed in-browser game deployed on Github Pages."
     },
     {
@@ -65,7 +67,7 @@ const projects = [
       live: "https://obscure-fortress-74365.herokuapp.com/games",
       git: "https://github.com/tjphillips08/Video-game-news",
       image: "https://i.imgur.com/ZF7zE0l.png",
-      tech: ["HTML5", "CSS Grid", "CSS Flexbox", "Javascript", "Node.js", "Express.js", "MongoDB","Heroku"],
+      tech: [<FaHtml5/>, <FaCss3/>, <SiJavascript/>, <FaNodeJs/>, <SiMongodb/>, <SiHeroku/>],
       description: "Full-stack MEN application rendering a fully-functional video game news site with user interactivity. Deployed on Heroku."
     },
     {
@@ -73,7 +75,7 @@ const projects = [
       live: "https://anime-db.netlify.app/",
       git: "https://github.com/saybeeali/animedb-front-end",
       image: "https://i.imgur.com/E7DOkrU.png",
-      tech: ["HTML5", "Bootstrap", "Javascript", "React", "Node.js", "Express.js", "MongoDB","Heroku", "Netlify"],
+      tech: [<FaHtml5/>, <BsBootstrapFill/>, <SiJavascript/>, <FaNodeJs/>, <SiMongodb/>, <FaReact/>],
       description: "Full-stack MERN application for users to find information on top anime drawn from an external API. Deployed on Netlify."
     },
     {
@@ -81,7 +83,7 @@ const projects = [
       live: "https://dadhub.herokuapp.com/",
       git: "https://github.com/ekelly55/DadHub",
       image: "https://i.imgur.com/mpkZ74g.png",
-      tech: ["HTML5", "Bootstrap", "Python", "Django", "PostgreSQL", "Heroku"],
+      tech: [<FaHtml5/>, <BsBootstrapFill/>, <FaPython/>, <SiDjango/>, <SiPostgresql/>, <SiHeroku/>],
       description: "Full-stack fully-responsive Django/PostgreSQL social media app for dads to interact and connect based on common interests and location. Deployed on Heroku."
     },
   ];
@@ -91,19 +93,19 @@ const projects = [
 const skills = {
   show: true,
   heading: "Skills",
-  faHardSkills: [
-    { image: "fa-github"},
-    { image: "fa-html5"},
-    { image: "fa-css3"},
-    { image: "fa-react"},
-    { image: "fa-python"},
-    { image: "fa-node"},
-    { image: "fa-bootstrap"},
-    { image: "fa-square-js"},
-  ],
-  diHardSkills: [
-    { image: "DiDjango"},
-    { image: "DiMongodb"}
+  hardSkills: [
+    { image: "<FaGithub/>"},
+    { image: "<FaHtml5/>"},
+    { image: "<FaCss3/>"},
+    { image: "<FaReact/>"},
+    { image: "<FaPython/>"},
+    { image: "<FaNodeJs/>"},
+    { image: "<BsBootstrapFill/>"},
+    { image: "<SiJavascript/>"},
+    { image: "<SiDjango/>"},
+    { image: "<SiMongodb/>"},
+    { image: "<SiHeroku/>"},
+    { image: "<SiNetlify/>"}
     
   ],
   softSkills: [

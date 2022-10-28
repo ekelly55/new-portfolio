@@ -2,6 +2,9 @@ import React, { useState, useEffect, useCallback } from "react";
 import Col from "react-bootstrap/Col";
 import Card from "react-bootstrap/Card";
 import axios from "axios";
+import { SiJavascript, SiDjango, SiMongodb, SiNetlify, SiHeroku } from "react-icons/si"
+import { FaGithub, FaHtml5, FaCss3, FaReact, FaPython, FaNodeJs } from "react-icons/fa"
+import { BsBootstrapFill } from "react-icons/bs"
 
 const ProjectCard = ({ project }) => {
 
@@ -13,9 +16,9 @@ const ProjectCard = ({ project }) => {
           <Card.Title as="h5">{project.name} </Card.Title>
           <Card.Text>
             <div className=" container techSection">
-              <ul className="  techList">
+              <ul className=" row techList">
                 {project.tech.map((tech, index) => (
-                  <li className="">{tech}</li>
+                  <li className="col-4">{tech}</li>
                 ))}
               </ul>
             </div>

@@ -6,10 +6,11 @@ import Row from "react-bootstrap/Row";
 import { Jumbotron } from "./migration";
 import { Container } from "react-bootstrap";
 import { useScrollPosition } from "../../hooks/useScrollPosition";
-import {DiDjango, DiMongodb, DiHeroku} from "react-icons/di"
-import {SiNetlify} from "react-icons/si"
+import { SiJavascript, SiDjango, SiMongodb, SiNetlify, SiHeroku } from "react-icons/si"
+import { FaGithub, FaHtml5, FaCss3, FaReact, FaPython, FaNodeJs } from "react-icons/fa"
+import { BsBootstrapFill } from "react-icons/bs"
 
-const Skills = React.forwardRef(({ heading, faHardSkills, diHardSkills, softSkills }, ref) => {
+const Skills = React.forwardRef(({ heading, hardSkills, softSkills }, ref) => {
   const skillsTabRef = React.useRef(null);
   const [isScrolled, setIsScrolled] = React.useState(false);
   //const navbarDimensions = useResizeObserver(navbarMenuRef);
@@ -25,16 +26,33 @@ const Skills = React.forwardRef(({ heading, faHardSkills, diHardSkills, softSkil
     <Jumbotron fluid className="bg-white m-0" id="skills">
       <Container className="p-5 ">
         <h2 className="display-4 pb-5 text-center">
-          {heading}
+          Skills
         </h2>
-        
-        {faHardSkills.map((skill, index) => (
-          <i className={`fab ${skill.image}  fa-3x stackicons`} />
-))}
-        <DiDjango className="django stackicons"/>
-        <DiMongodb className="mongo stackicons"/>
-        <DiHeroku className="heroku stackicons"/>
-        <SiNetlify className="netlify stackicons"/>
+        <div className="row p-2">
+
+          <FaGithub className="col stackicons"/>
+          <FaHtml5 className="col stackicons"/>
+          <FaCss3 className="col stackicons"/>
+          <FaReact className="col stackicons"/>
+          <FaPython className="col stackicons"/>
+          <FaNodeJs className="col stackicons"/>
+          </div>
+        <div className="row p-2">
+          <BsBootstrapFill className="col stackicons"/>
+          <SiJavascript className="col stackicons"/>
+          <SiDjango className="col stackicons"/>
+          <SiMongodb className="col stackicons"/>
+          <SiHeroku className="col stackicons"/>
+          <SiNetlify className="col stackicons"/>
+          {/* {hardSkills.map((skill, index) => (
+          <div className="col">
+
+          {skill}
+          </div>
+          // <i className={`fab ${skill.image} col justify-content-center text-center fa-3x stackicons`} />
+          ))} */}
+
+        </div>
 
         {/* <Tabs
           className="skills-tabs"
