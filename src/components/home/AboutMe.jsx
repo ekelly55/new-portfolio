@@ -39,9 +39,9 @@ const AboutMe = ({ heading, message, link, imgSize, resume }) => {
           
             <img
               className="border rounded-circle"
-              src="https://i.imgur.com/GKOmuWO.png"
+              src="https://i.imgur.com/elMCOhV.png"
               alt="profilepicture"
-              width="310"
+              width="300"
               height="300"
             />
           
