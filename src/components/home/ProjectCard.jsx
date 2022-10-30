@@ -9,10 +9,10 @@ import { BsBootstrapFill } from "react-icons/bs"
 const ProjectCard = ({ project }) => {
 
   return (
-    <div className="card shadow-lg p-3 mb-5 bg-white rounded">
+    <div className="card justify-content-center align-content-center justify-items-center align-items-center shadow-lg m-3">
 
       
-        <img className="projectpic" src={project.image} />
+        <img className="projectpic d-block mx-auto" src={project.image} />
         <div className="overlay">
           <div className="content">
             <h5>{project.name}</h5>

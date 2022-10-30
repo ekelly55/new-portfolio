@@ -88,14 +88,30 @@ code {
   }
 }
 
+
+
+#projects {
+  justify-content: center;
+}
+
+.projectcol{
+  justify-items: center;
+  
+}
+
 .card {
   // transform: translate(-50%, -50%);
   height: fit-content;
-  padding: 0
+  padding: 0;
+  max-width: 500px;
+  margin: 0;
+  
 }
 
 .projectpic {
   margin: 0;
+  max-width: 500px;
+
 }
 
 .overlay {

@@ -58,7 +58,7 @@ const projects = [
       name: "Ghost Assistant",
       live: "https://ekelly55.github.io/Project-1-Ghost-Assistant/",
       git: "https://github.com/ekelly55/Project-1-Ghost-Assistant",
-      image: "https://i.imgur.com/3EPeFVl.png",
+      image: "https://i.imgur.com/nlyylq8.png",
       tech: [<FaHtml5/>, <FaCss3/>, <SiJavascript/>],
       description: "Tamagotchi-style Halloween-themed in-browser game deployed on Github Pages."
     },
@@ -66,7 +66,7 @@ const projects = [
       name: "Noob Insider",
       live: "https://obscure-fortress-74365.herokuapp.com/games",
       git: "https://github.com/tjphillips08/Video-game-news",
-      image: "https://i.imgur.com/ZF7zE0l.png",
+      image: "https://i.imgur.com/mNeOYc5.png",
       tech: [<FaHtml5/>, <FaCss3/>, <SiJavascript/>, <FaNodeJs/>, <SiMongodb/>, <SiHeroku/>],
       description: "Full-stack MEN application rendering a fully-functional video game news site with user interactivity. Deployed on Heroku."
     },
@@ -74,7 +74,7 @@ const projects = [
       name: "AnimeDB",
       live: "https://anime-db.netlify.app/",
       git: "https://github.com/saybeeali/animedb-front-end",
-      image: "https://i.imgur.com/E7DOkrU.png",
+      image: "https://i.imgur.com/kj1Vece.png",
       tech: [<FaHtml5/>, <BsBootstrapFill/>, <SiJavascript/>, <FaNodeJs/>, <SiMongodb/>, <FaReact/>],
       description: "Full-stack MERN application for users to find information on top anime drawn from an external API. Deployed on Netlify."
     },
@@ -82,7 +82,7 @@ const projects = [
       name: "DadHub",
       live: "https://dadhub.herokuapp.com/",
       git: "https://github.com/ekelly55/DadHub",
-      image: "https://i.imgur.com/mpkZ74g.png",
+      image: "https://i.imgur.com/ilUGmRv.png",
       tech: [<FaHtml5/>, <BsBootstrapFill/>, <FaPython/>, <SiDjango/>, <SiPostgresql/>, <SiHeroku/>],
       description: "Full-stack fully-responsive Django/PostgreSQL social media app for dads to interact and connect based on common interests and location. Deployed on Heroku."
     },
