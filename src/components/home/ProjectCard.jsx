@@ -24,6 +24,9 @@ const ProjectCard = ({ project }) => {
                 ))}
               </ul>
             </div>
+            <div>
+              <CardButtons live={project.live} git={project.git}/>
+            </div>
           </div>
         </div>
         {/* <Card.Body>
@@ -48,10 +51,10 @@ const ProjectCard = ({ project }) => {
 const CardButtons = ({ live, git }) => {
   return (
     <div className="d-grid gap-2 d-md-block">
-      <a href={live} className="btn btn-outline-secondary mx-2">
+      <a href={live} className="btn btn-outline-secondary mx-2" target="_blank">
         Live
       </a>
-      <a href={git} className="btn btn-outline-secondary mx-2">
+      <a href={git} className="btn btn-outline-secondary mx-2"target="_blank">
         GitHub
       </a>
     </div>

@@ -30,20 +30,20 @@ const Skills = React.forwardRef(({ heading, hardSkills, softSkills }, ref) => {
         </h2>
         <div className="row p-2">
 
-          <FaGithub className="col stackicons"/>
-          <FaHtml5 className="col stackicons"/>
-          <FaCss3 className="col stackicons"/>
-          <FaReact className="col stackicons"/>
-          <FaPython className="col stackicons"/>
-          <FaNodeJs className="col stackicons"/>
+          <FaGithub className="col stackicons" alt="github"/>
+          <FaHtml5 className="col stackicons" alt="html5"/>
+          <FaCss3 className="col stackicons" alt="css"/>
+          <FaReact className="col stackicons" alt="react"/>
+          <FaPython className="col stackicons" alt="python"/>
+          <FaNodeJs className="col stackicons" alt="node.js"/>
           </div>
         <div className="row p-2">
-          <BsBootstrapFill className="col stackicons"/>
-          <SiJavascript className="col stackicons"/>
-          <SiDjango className="col stackicons"/>
-          <SiMongodb className="col stackicons"/>
-          <SiHeroku className="col stackicons"/>
-          <SiNetlify className="col stackicons"/>
+          <BsBootstrapFill className="col stackicons" alt="bootstrap"/>
+          <SiJavascript className="col stackicons" alt="javascript"/>
+          <SiDjango className="col stackicons" alt="django"/>
+          <SiMongodb className="col stackicons" alt="mongodb"/>
+          <SiHeroku className="col stackicons" alt="heroku"/>
+          <SiNetlify className="col stackicons" alt=""/>
           {/* {hardSkills.map((skill, index) => (
           <div className="col">
 

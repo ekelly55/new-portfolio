@@ -68,7 +68,7 @@ const projects = [
       git: "https://github.com/tjphillips08/Video-game-news",
       image: "https://i.imgur.com/mNeOYc5.png",
       tech: [<FaHtml5/>, <FaCss3/>, <SiJavascript/>, <FaNodeJs/>, <SiMongodb/>, <SiHeroku/>],
-      description: "Full-stack MEN application rendering a fully-functional video game news site with user interactivity. Deployed on Heroku."
+      description: "Full-stack MEN application rendering a fully-functional video game news site. Deployed on Heroku."
     },
     {
       name: "AnimeDB",
@@ -84,7 +84,7 @@ const projects = [
       git: "https://github.com/ekelly55/DadHub",
       image: "https://i.imgur.com/ilUGmRv.png",
       tech: [<FaHtml5/>, <BsBootstrapFill/>, <FaPython/>, <SiDjango/>, <SiPostgresql/>, <SiHeroku/>],
-      description: "Full-stack fully-responsive Django/PostgreSQL social media app for dads to interact and connect based on common interests and location. Deployed on Heroku."
+      description: "Full-stack fully-responsive Django/PostgreSQL social media app for dads to interact and connect based on common interests and location. Users can register, log in, post content and comment on others' content, delete posts and comments, create and edit a profile and search users by interest and posts by topic. Deployed on Heroku."
     },
   ];
   
@@ -94,18 +94,18 @@ const skills = {
   show: true,
   heading: "Skills",
   hardSkills: [
-    { image: "<FaGithub/>"},
-    { image: "<FaHtml5/>"},
-    { image: "<FaCss3/>"},
-    { image: "<FaReact/>"},
-    { image: "<FaPython/>"},
-    { image: "<FaNodeJs/>"},
-    { image: "<BsBootstrapFill/>"},
-    { image: "<SiJavascript/>"},
-    { image: "<SiDjango/>"},
-    { image: "<SiMongodb/>"},
-    { image: "<SiHeroku/>"},
-    { image: "<SiNetlify/>"}
+    { image: "<FaGithub/>", alt: "github"},
+    { image: "<FaHtml5/>", alt: "html5"},
+    { image: "<FaCss3/>", alt: "css"},
+    { image: "<FaReact/>", alt: "react"},
+    { image: "<FaPython/>", alt: "python"},
+    { image: "<FaNodeJs/>", alt: "node.js"},
+    { image: "<BsBootstrapFill/>", alt: "bootstrap"},
+    { image: "<SiJavascript/>", alt: "javascript"},
+    { image: "<SiDjango/>", alt: "django"},
+    { image: "<SiMongodb/>", alt: "mondodb"},
+    { image: "<SiHeroku/>", alt: "heroku"},
+    { image: "<SiNetlify/>", alt: "netlify"}
     
   ],
   softSkills: [
