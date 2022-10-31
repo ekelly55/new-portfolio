@@ -6,6 +6,9 @@ import Row from "react-bootstrap/Row";
 import { Jumbotron } from "./migration";
 import { Container } from "react-bootstrap";
 import { useScrollPosition } from "../../hooks/useScrollPosition";
+import { SiJavascript, SiDjango, SiMongodb, SiNetlify, SiHeroku } from "react-icons/si"
+import { FaGithub, FaHtml5, FaCss3, FaReact, FaPython, FaNodeJs } from "react-icons/fa"
+import { BsBootstrapFill } from "react-icons/bs"
 
 const Skills = React.forwardRef(({ heading, hardSkills, softSkills }, ref) => {
   const skillsTabRef = React.useRef(null);
@@ -20,12 +23,38 @@ const Skills = React.forwardRef(({ heading, hardSkills, softSkills }, ref) => {
     skillsTabRef
   );
   return (
-    <Jumbotron ref={skillsTabRef} fluid className="bg-white m-0" id="skills">
+    <Jumbotron fluid className="bg-white m-0" id="skills">
       <Container className="p-5 ">
-        <h2 ref={skillsTabRef} className="display-4 pb-5 text-center">
-          {heading}
+        <h2 className="display-4 pb-5 text-center">
+          Skills
         </h2>
-        <Tabs
+        <div className="row p-2">
+
+          <FaGithub className="col stackicons" alt="github"/>
+          <FaHtml5 className="col stackicons" alt="html5"/>
+          <FaCss3 className="col stackicons" alt="css"/>
+          <FaReact className="col stackicons" alt="react"/>
+          <FaPython className="col stackicons" alt="python"/>
+          <FaNodeJs className="col stackicons" alt="node.js"/>
+          </div>
+        <div className="row p-2">
+          <BsBootstrapFill className="col stackicons" alt="bootstrap"/>
+          <SiJavascript className="col stackicons" alt="javascript"/>
+          <SiDjango className="col stackicons" alt="django"/>
+          <SiMongodb className="col stackicons" alt="mongodb"/>
+          <SiHeroku className="col stackicons" alt="heroku"/>
+          <SiNetlify className="col stackicons" alt=""/>
+          {/* {hardSkills.map((skill, index) => (
+          <div className="col">
+
+          {skill}
+          </div>
+          // <i className={`fab ${skill.image} col justify-content-center text-center fa-3x stackicons`} />
+          ))} */}
+
+        </div>
+
+        {/* <Tabs
           className="skills-tabs"
           defaultActiveKey="hard-skills"
           id="skills-tabs"
@@ -49,7 +78,7 @@ const Skills = React.forwardRef(({ heading, hardSkills, softSkills }, ref) => {
               <SkillsTab skills={softSkills} isScrolled={isScrolled} />
             </Row>
           </Tab>
-        </Tabs>
+        </Tabs> */}
       </Container>
     </Jumbotron>
   );

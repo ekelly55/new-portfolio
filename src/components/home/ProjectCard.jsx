@@ -1,53 +1,61 @@
 import React, { useState, useEffect, useCallback } from "react";
 import Col from "react-bootstrap/Col";
 import Card from "react-bootstrap/Card";
-import Skeleton from "react-loading-skeleton";
 import axios from "axios";
+import { SiJavascript, SiDjango, SiMongodb, SiNetlify, SiHeroku } from "react-icons/si"
+import { FaGithub, FaHtml5, FaCss3, FaReact, FaPython, FaNodeJs } from "react-icons/fa"
+import { BsBootstrapFill } from "react-icons/bs"
 
-const ProjectCard = ({ value }) => {
-  const {
-    name,
-    description,
-    svn_url,
-    stargazers_count,
-    languages_url,
-    pushed_at,
-  } = value;
+const ProjectCard = ({ project }) => {
+
   return (
-    <Col md={6}>
-      <Card className="card shadow-lg p-3 mb-5 bg-white rounded">
-        <Card.Body>
-          <Card.Title as="h5">{name || <Skeleton />} </Card.Title>
-          <Card.Text>{(!description) ? "" : description || <Skeleton count={3} />} </Card.Text>
-          {svn_url ? <CardButtons svn_url={svn_url} /> : <Skeleton count={2} />}
-          <hr />
-          {languages_url ? (
-            <Language languages_url={languages_url} repo_url={svn_url} />
-          ) : (
-            <Skeleton count={3} />
-          )}
-          {value ? (
-            <CardFooter star_count={stargazers_count} repo_url={svn_url} pushed_at={pushed_at} />
-          ) : (
-            <Skeleton />
-          )}
-        </Card.Body>
-      </Card>
-    </Col>
+    <div className="card justify-content-center align-content-center justify-items-center align-items-center shadow-lg m-3">
+
+      
+        <img className="projectpic d-block w-100 mx-auto" src={project.image} />
+        <div className="overlay">
+          <div className="content p-4">
+            <h5 >{project.name}</h5>
+            <p className="text-start" >{project.description}</p>
+            <div className=" container techSection">
+              <ul className=" row techList">
+                {project.tech.map((tech, index) => (
+                  <li className="col-4 mb-2">{tech}</li>
+                ))}
+              </ul>
+            </div>
+            <div>
+              <CardButtons live={project.live} git={project.git}/>
+            </div>
+          </div>
+        </div>
+        {/* <Card.Body>
+          <Card.Title as="h5">{project.name} </Card.Title>
+          <Card.Text>
+            <div className=" container techSection">
+              <ul className=" row techList">
+                {project.tech.map((tech, index) => (
+                  <li className="col-4">{tech}</li>
+                ))}
+              </ul>
+            </div>
+            {project.description} 
+          </Card.Text>
+              <CardButtons live={project.live} git={project.git}/>
+        </Card.Body> */}
+      
+    </div>
   );
 };
 
-const CardButtons = ({ svn_url }) => {
+const CardButtons = ({ live, git }) => {
   return (
-    <div className="d-grid gap-2 d-md-block">
-      <a
-        href={`${svn_url}/archive/master.zip`}
-        className="btn btn-outline-secondary mx-2"
-      >
-        <i className="fab fa-github" /> Clone Project
+    <div className="">
+      <a href={live} className="btn live btn-lg w-25 btn-block btn-outline-secondary mx-2" target="_blank">
+        Live
       </a>
-      <a href={svn_url} target=" _blank" className="btn btn-outline-secondary mx-2">
-        <i className="fab fa-github" /> Repo
+      <a href={git} className="btn git btn-lg w-25 btn-block btn-outline-secondary mx-2"target="_blank">
+        GitHub
       </a>
     </div>
   );

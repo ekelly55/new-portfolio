@@ -7,7 +7,8 @@ import {
   repos,
   skills,
   getInTouch,
-  experiences
+  experiences,
+  projects
 } from "./editable-stuff/config.js";
 import MainBody from "./components/home/MainBody";
 import AboutMe from "./components/home/AboutMe";
@@ -39,29 +40,34 @@ const Home = React.forwardRef((props, ref) => {
           link={about.imageLink}
           imgSize={about.imageSize}
           resume={about.resume}
-        />
-      )}
+          />
+          )}
       {
         experiences.show && (
           <Experience experiences={experiences}/>
-        )
-      }
-      {repos.show && (
+          )
+        }
+      
         <Project
-          heading={repos.heading}
-          username={repos.gitHubUsername}
-          length={repos.reposLength}
-          specfic={repos.specificRepos}
+          projects = {projects}
         />
-      )}
+      
       
       {skills.show && (
         <Skills
           heading={skills.heading}
-          hardSkills={skills.hardSkills}
+          faHardSkills={skills.faHardSkills}
+          diHardSkills={skills.diHardSkills}
           softSkills={skills.softSkills}
-        />
-      )}
+          />
+          )}
+        {/* <Footer/> */}
+        {/* <GetInTouch
+          heading={getInTouch.heading}
+          message={getInTouch.message}
+          email={getInTouch.email}
+          /> */}
+          
       
     </>
   );
@@ -78,15 +84,16 @@ const App = () => {
       </Routes>
       {/* {false && <Route path="/blog" exact component={Blog} />}
       {false && <Route path="/blog/:id" component={BlogPost} />} */}
-      <Footer>
-        {getInTouch.show && (
+      <GetInTouch 
+      heading={getInTouch.heading}
+      message={getInTouch.message}
+      email={getInTouch.email}/>
+        {/* {getInTouch.show && (
           <GetInTouch
-            heading={getInTouch.heading}
-            message={getInTouch.message}
-            email={getInTouch.email}
-          />
+            
+          /> 
         )}
-      </Footer>
+          */}
     </BrowserRouter>
   );
 };
