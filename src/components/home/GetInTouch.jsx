@@ -2,7 +2,7 @@ import React from "react";
 
 const GetInTouch = ({ heading, message, email }) => {
   return (
-    <div className="contact">
+    <div className="contact p-2">
       <h2 className="display-4 p-3 text-center" id="contact">{heading}</h2>
       <p className="lead text-center pb-4">
         {message} <br></br><br></br>
