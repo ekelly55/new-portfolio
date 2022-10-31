@@ -51,10 +51,10 @@ const ProjectCard = ({ project }) => {
 const CardButtons = ({ live, git }) => {
   return (
     <div className="">
-      <a href={live} className="btn btn-lg w-25 btn-block btn-outline-secondary mx-2" target="_blank">
+      <a href={live} className="btn live btn-lg w-25 btn-block btn-outline-secondary mx-2" target="_blank">
         Live
       </a>
-      <a href={git} className="btn btn-lg w-25 btn-block btn-outline-secondary mx-2"target="_blank">
+      <a href={git} className="btn git btn-lg w-25 btn-block btn-outline-secondary mx-2"target="_blank">
         GitHub
       </a>
     </div>
