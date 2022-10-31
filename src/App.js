@@ -84,7 +84,7 @@ const App = () => {
       </Routes>
       {/* {false && <Route path="/blog" exact component={Blog} />}
       {false && <Route path="/blog/:id" component={BlogPost} />} */}
-      <Footer 
+      <GetInTouch 
       heading={getInTouch.heading}
       message={getInTouch.message}
       email={getInTouch.email}/>

@@ -36,7 +36,7 @@ const Navigation = React.forwardRef((props, ref) => {
       ref={navbarMenuRef}
       className={`px-3 fixed-top  ${!isTop ? "navbar-white" : "navbar-transparent"
         }`}
-      expand="lg"
+      collapseOnSelect expand="lg"
     >
       <Navbar.Brand className="navbar-brand" href={process.env.PUBLIC_URL + "/#home"}>
         {`<Eamonn>`}<br></br>
@@ -44,7 +44,7 @@ const Navigation = React.forwardRef((props, ref) => {
         {`</Kelly>`}
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" className="toggler" />
-      <Navbar.Collapse id="basic-navbar-nav">
+      <Navbar.Collapse collapseOnSelect="true" id="basic-navbar-nav">
         <Nav className="navbar-nav mr-auto">
           {/* {
             <NavLink className="nav-item lead">

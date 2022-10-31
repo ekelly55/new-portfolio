@@ -10,7 +10,7 @@ const Project = (props) => {
 
   return (
     <Jumbotron fluid id="projects" className="bg-light m-0">
-      <Container className="container projects">
+      <Container className="container mb-0 projects">
      
 
       <h2 className="display-4 pb-5 text-center">
