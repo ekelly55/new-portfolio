@@ -19,7 +19,7 @@ const Project = (props) => {
       
         <Row className="d-flex justify-content-evenly">
           {props.projects.map((project, index) => (
-            <div className="col col-md-6 col-xs-12 projectcol justify-content-center align-content-center justify-items-center align-items-center projectcol">
+            <div className="col-md-6 col-xs-12 mb-5 projectcol">
 
               <ProjectCard project = {project}/>
             </div>

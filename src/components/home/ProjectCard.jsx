@@ -14,13 +14,13 @@ const ProjectCard = ({ project }) => {
       
         <img className="projectpic d-block w-100 mx-auto" src={project.image} />
         <div className="overlay">
-          <div className="content">
-            <h5>{project.name}</h5>
-            <p>{project.description}</p>
+          <div className="content p-4">
+            <h5 >{project.name}</h5>
+            <p className="text-start" >{project.description}</p>
             <div className=" container techSection">
               <ul className=" row techList">
                 {project.tech.map((tech, index) => (
-                  <li className="col-4">{tech}</li>
+                  <li className="col-4 mb-2">{tech}</li>
                 ))}
               </ul>
             </div>
@@ -50,11 +50,11 @@ const ProjectCard = ({ project }) => {
 
 const CardButtons = ({ live, git }) => {
   return (
-    <div className="d-grid gap-2 d-md-block">
-      <a href={live} className="btn btn-outline-secondary mx-2" target="_blank">
+    <div className="">
+      <a href={live} className="btn btn-lg w-25 btn-block btn-outline-secondary mx-2" target="_blank">
         Live
       </a>
-      <a href={git} className="btn btn-outline-secondary mx-2"target="_blank">
+      <a href={git} className="btn btn-lg w-25 btn-block btn-outline-secondary mx-2"target="_blank">
         GitHub
       </a>
     </div>

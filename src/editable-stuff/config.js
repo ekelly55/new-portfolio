@@ -84,7 +84,7 @@ const projects = [
       git: "https://github.com/ekelly55/DadHub",
       image: "https://i.imgur.com/ilUGmRv.png",
       tech: [<FaHtml5/>, <BsBootstrapFill/>, <FaPython/>, <SiDjango/>, <SiPostgresql/>, <SiHeroku/>],
-      description: "Full-stack fully-responsive Django/PostgreSQL social media app for dads to interact and connect based on common interests and location. Users can register, log in, post content and comment on others' content, delete posts and comments, create and edit a profile and search users by interest and posts by topic. Deployed on Heroku."
+      description: "Full-stack fully-responsive Django/PostgreSQL social media app for dads to interact and connect based on common interests and location. Deployed on Heroku."
     },
   ];
   
