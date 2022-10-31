@@ -12,7 +12,7 @@ const ProjectCard = ({ project }) => {
     <div className="card justify-content-center align-content-center justify-items-center align-items-center shadow-lg m-3">
 
       
-        <img className="projectpic d-block mx-auto" src={project.image} />
+        <img className="projectpic d-block w-100 mx-auto" src={project.image} />
         <div className="overlay">
           <div className="content">
             <h5>{project.name}</h5>
