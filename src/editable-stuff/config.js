@@ -133,16 +133,8 @@ const experiences = {
   show: false,
   heading: "Experiences",
   data: [
-    {
-      role: 'Software Engineer',// Here Add Company Name
-      companylogo: require('../assets/img/dell.png'),
-      date: 'June 2018 – Present',
-    },
-    {
-      role: 'Front-End Developer',
-      companylogo: require('../assets/img/boeing.png'),
-      date: 'May 2017 – May 2018',
-    },
+    {},
+    {},
   ]
 }
 
