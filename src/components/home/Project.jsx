@@ -3,7 +3,6 @@ import Container from "react-bootstrap/Container";
 import { Jumbotron } from "./migration";
 import Row from "react-bootstrap/Row";
 import ProjectCard from "./ProjectCard";
-import axios from "axios";
 import { configure } from "@testing-library/react";
 
 const Project = (props) => {

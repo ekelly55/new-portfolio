@@ -1,7 +1,4 @@
 import React from "react";
-import Tab from "react-bootstrap/Tab";
-import Tabs from "react-bootstrap/Tabs";
-import SkillsTab from "./SkillsTab";
 import Row from "react-bootstrap/Row";
 import { Jumbotron } from "./migration";
 import { Container } from "react-bootstrap";
