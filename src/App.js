@@ -49,7 +49,7 @@ const Home = React.forwardRef((props, ref) => {
         }
       
         <Project
-          projects = {projects}
+          projects = {projects.reverse()}
         />
       
       

@@ -38,7 +38,7 @@ const AboutMe = ({ heading, message, link, imgSize, resume }) => {
         <div className="col-4 imgcol justify-content-center">
           
             <img
-              className="border rounded-circle"
+              className="rounded-circle"
               src="https://i.imgur.com/elMCOhV.png"
               alt="profilepicture"
               width="300"
