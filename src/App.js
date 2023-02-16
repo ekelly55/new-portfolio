@@ -7,15 +7,21 @@ import {
   repos,
   skills,
   getInTouch,
+  experiences,
   projects
 } from "./editable-stuff/config.js";
 import MainBody from "./components/home/MainBody";
 import AboutMe from "./components/home/AboutMe";
 import Project from "./components/home/Project";
+import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import Skills from "./components/home/Skills";
+// import { Blog } from "./components/blog/Blog";
+// import BlogPost from "./components/blog/BlogPost";
 import GetInTouch from "./components/home/GetInTouch.jsx";
+import Leadership from "./components/home/Leadership.jsx";
 
+import Experience from "./components/home/Experience";
 
 const Home = React.forwardRef((props, ref) => {
   return (
@@ -36,7 +42,11 @@ const Home = React.forwardRef((props, ref) => {
           resume={about.resume}
           />
           )}
- 
+      {
+        experiences.show && (
+          <Experience experiences={experiences}/>
+          )
+        }
       
         <Project
           projects = {projects.reverse()}
@@ -51,7 +61,12 @@ const Home = React.forwardRef((props, ref) => {
           softSkills={skills.softSkills}
           />
           )}
-   
+        {/* <Footer/> */}
+        {/* <GetInTouch
+          heading={getInTouch.heading}
+          message={getInTouch.message}
+          email={getInTouch.email}
+          /> */}
           
       
     </>
@@ -67,12 +82,18 @@ const App = () => {
       <Routes>
         <Route path="/" exact element={<Home ref={titleRef} />} />
       </Routes>
-   
+      {/* {false && <Route path="/blog" exact component={Blog} />}
+      {false && <Route path="/blog/:id" component={BlogPost} />} */}
       <GetInTouch 
       heading={getInTouch.heading}
       message={getInTouch.message}
       email={getInTouch.email}/>
-    
+        {/* {getInTouch.show && (
+          <GetInTouch
+            
+          /> 
+        )}
+          */}
     </BrowserRouter>
   );
 };
