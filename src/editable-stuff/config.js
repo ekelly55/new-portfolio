@@ -44,7 +44,7 @@ const about = {
   show: true,
   heading: "About Me",
   imageSize: 375,
-  resume: "https://docs.google.com/document/d/13_PWdhThMr6roxb-UFiJj4YAFOj8e_bv3Vx9UHQdyBQ/edit?usp=sharing",
+  resume: "https://docs.google.com/document/d/1Kg3794YKPq4bDoUgrUWN4jO4f3IjG-LkGxUdwM-bGLI/edit?usp=sharing",
 };
 
 // PROJECTS SECTION
@@ -64,10 +64,10 @@ const projects = [
     },
     {
       name: "Noob Insider",
-      live: "https://obscure-fortress-74365.herokuapp.com/games",
-      git: "https://github.com/tjphillips08/Video-game-news",
-      image: "https://i.imgur.com/mNeOYc5.png",
-      tech: [<FaHtml5/>, <FaCss3/>, <SiJavascript/>, <FaNodeJs/>, <SiMongodb/>, <SiHeroku/>],
+      live: "https://noob-insider-55a00c97f43a.herokuapp.com/games",
+      git: "https://github.com/ekelly55/Video-game-news",
+      image: "https://i.imgur.com/2h1YRbg.png",
+      tech: [<FaHtml5/>, <FaCss3/>, <SiJavascript/>, <FaNodeJs/>, <SiMongodb/>, <BsBootstrapFill/>],
       description: "Full-stack MEN application rendering a fully-functional video game news site. Deployed on Heroku."
     },
     {

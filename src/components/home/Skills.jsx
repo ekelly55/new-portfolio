@@ -6,7 +6,7 @@ import Row from "react-bootstrap/Row";
 import { Jumbotron } from "./migration";
 import { Container } from "react-bootstrap";
 import { useScrollPosition } from "../../hooks/useScrollPosition";
-import { SiJavascript, SiDjango, SiMongodb, SiNetlify, SiHeroku } from "react-icons/si"
+import { SiJavascript, SiDjango, SiMongodb, SiNetlify, SiHeroku, SiTailwindcss, SiPandas, SiTypescript } from "react-icons/si"
 import { FaGithub, FaHtml5, FaCss3, FaReact, FaPython, FaNodeJs } from "react-icons/fa"
 import { BsBootstrapFill } from "react-icons/bs"
 
@@ -36,6 +36,9 @@ const Skills = React.forwardRef(({ heading, hardSkills, softSkills }, ref) => {
           <FaReact className="col stackicons" alt="react"/>
           <FaPython className="col stackicons" alt="python"/>
           <FaNodeJs className="col stackicons" alt="node.js"/>
+          <SiTailwindcss className="col stackicons" alt="TailWindCSS"/>
+          <SiTypescript className="col stackicons" alt="typescript"/>
+          
           </div>
         <div className="row p-2">
           <BsBootstrapFill className="col stackicons" alt="bootstrap"/>
@@ -43,7 +46,8 @@ const Skills = React.forwardRef(({ heading, hardSkills, softSkills }, ref) => {
           <SiDjango className="col stackicons" alt="django"/>
           <SiMongodb className="col stackicons" alt="mongodb"/>
           <SiHeroku className="col stackicons" alt="heroku"/>
-          <SiNetlify className="col stackicons" alt=""/>
+          <SiNetlify className="col stackicons" alt="netlify"/>
+          <SiPandas className="col stackicons" alt="pandas"/>
           {/* {hardSkills.map((skill, index) => (
           <div className="col">
 
