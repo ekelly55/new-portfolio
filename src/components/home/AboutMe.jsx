@@ -53,7 +53,7 @@ const AboutMe = ({ heading, message, link, imgSize, resume }) => {
             <p className="lead text-center">
               <a
                 className="btn btn-outline-dark btn-lg me-2"
-                href="https://drive.google.com/file/d/1tm2Isoo7Cr2NmoY2z6SohKr6vbSpQd4G/view?usp=sharing"
+                href="https://docs.google.com/document/d/1Kg3794YKPq4bDoUgrUWN4jO4f3IjG-LkGxUdwM-bGLI/edit?usp=sharing"
                 target="_blank"
                 rel="noreferrer noopener"
                 role="button"

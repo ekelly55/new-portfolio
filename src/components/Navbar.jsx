@@ -61,7 +61,7 @@ const Navigation = React.forwardRef((props, ref) => {
           )}
           <NavLink
             className="nav-item navLink lead"
-            href="https://drive.google.com/file/d/1tm2Isoo7Cr2NmoY2z6SohKr6vbSpQd4G/view?usp=sharing"
+            href="https://docs.google.com/document/d/1Kg3794YKPq4bDoUgrUWN4jO4f3IjG-LkGxUdwM-bGLI/edit?usp=sharing"
             target="_blank"
             rel="noreferrer noopener"
           >
